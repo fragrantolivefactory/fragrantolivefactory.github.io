@@ -12,10 +12,25 @@
             color: #3c5a49;
         }
         header {
-            background: #4a7c59;
-            color: white;
-            padding: 1em 0;
+            position: relative;
             text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+            filter: brightness(70%);
+        }
+        header .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
         }
         .container {
             text-align: center;
@@ -57,13 +72,11 @@
 </head>
 <body>
     <header>
-        <h1>Fragrant Olive Factory</h1>
+        <img src="images/A_delicate_and_ephemeral_illustration_of_a_fragran.png" alt="Fragrant Olive Illustration">
+        <div class="title">Fragrant Olive Factory</div>
     </header>
     <div class="container">
         <div class="content">
-            <div class="image-container">
-                <img src="images/A_delicate_and_ephemeral_illustration_of_a_fragran.png" alt="Fragrant Olive Illustration">
-            </div>
             <div class="message">
                 "The Essence of Life is in the Fragrance"
             </div>
